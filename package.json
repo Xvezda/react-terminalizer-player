@@ -2,7 +2,8 @@
   "name": "react-terminalizer-player",
   "version": "1.0.0",
   "description": "React component for terminalizer player",
-  "main": "./src/index.js",
+  "module": "./dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "build:dev": "cross-env NODE_ENV=development webpack",
