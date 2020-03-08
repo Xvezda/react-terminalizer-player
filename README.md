@@ -1,4 +1,5 @@
 # React Terminalizer Player Component
+[![Version](https://img.shields.io/npm/v/react-terminalizer-player)](https://npmjs.com/package/react-terminalizer-player)
 [![License](https://img.shields.io/github/license/Xvezda/react-terminalizer-player)](LICENSE)
 
 > React component for terminalizer player.
