@@ -11,9 +11,18 @@
     "check": "standard",
     "check:fix": "standard --fix",
     "clean": "rm -rf dist/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run clean && npm run check && npm run build"
   },
   "author": "Xvezda <xvezda@naver.com> (https://xvezda.com/)",
+  "bugs": {
+    "url": "https://github.com/Xvezda/react-terminalizer-player/issues",
+    "email": "xvezda@naver.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xvezda/react-terminalizer-player.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
