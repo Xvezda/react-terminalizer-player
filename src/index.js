@@ -7,6 +7,5 @@
  */
 import TerminalizerPlayer from './TerminalizerPlayer'
 
-
-export default TerminalizerPlayer;
-export { TerminalizerPlayer };
+export default TerminalizerPlayer
+export { TerminalizerPlayer }

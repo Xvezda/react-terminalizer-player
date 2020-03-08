@@ -5,14 +5,14 @@
  * license that can be found in the LICENSE file or at
  * https://opensource.org/licenses/MIT.
  */
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require('webpack')
+const path = require('path')
 
 const config = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
     index: path.resolve(path.join(__dirname, 'src', 'index.js')),
-    player: path.resolve(path.join(__dirname, 'src', 'player.js')),
+    player: path.resolve(path.join(__dirname, 'src', 'player.js'))
   },
   output: {
     path: path.resolve(path.join(__dirname, 'dist')),
@@ -29,8 +29,8 @@ const config = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
-          },
+            loader: 'babel-loader'
+          }
         ]
       },
       {
@@ -44,7 +44,7 @@ const config = {
           }
         ]
       }
-    ],
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.css']
@@ -59,14 +59,14 @@ const config = {
       'window.$': 'jquery'
     }),
     */
-   new webpack.NoEmitOnErrorsPlugin()
-  ],
-};
+    new webpack.NoEmitOnErrorsPlugin()
+  ]
+}
 
 if (process.env.NODE_ENV !== 'production') {
-  config.devtool = 'eval';
+  config.devtool = 'eval'
 } else {
-  config.devtool = false;
+  config.devtool = false
   /*
   config.optimization = {
     splitChunks: {
@@ -77,5 +77,3 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = config
-
-

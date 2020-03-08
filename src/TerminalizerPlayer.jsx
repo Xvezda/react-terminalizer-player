@@ -12,21 +12,20 @@
 // import 'xterm/dist/xterm';
 // import 'terminalizer-player/dist/js/terminalizer';
 
-import { Terminalizer } from 'terminalizer-player/src/js/terminalizer';
+import { Terminalizer } from 'terminalizer-player/src/js/terminalizer'
 import React, { Component } from 'react'
 
-
 export default class TerminalizerPlayer extends Component {
-  componentDidMount() {
+  componentDidMount () {
     // this.$el = $(this.el)
     // this.$el.terminalizer({ ...this.props })
 
     this.$el = new Terminalizer(this.el, this.props)
   }
 
-  render() {
+  render () {
     return (
-      <div ref={el => this.el = el} />
+      <div ref={el => (this.el = el)} />
     )
   }
 }

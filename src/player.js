@@ -11,15 +11,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // import TerminalizerPlayer from '.'
-const TerminalizerPlayer = loadable(() => import('./TerminalizerPlayer'));
+const TerminalizerPlayer = loadable(() => import('./TerminalizerPlayer'))
 
 ReactDOM.render(
   <TerminalizerPlayer
-    recordingFile="data.json"
+    recordingFile='data.json'
     controls={false}
-    autoplay={true}
-    repeat={true}
+    autoplay
+    repeat
   />,
   document.getElementById('root')
 )
-
