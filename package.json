@@ -1,6 +1,6 @@
 {
   "name": "react-terminalizer-player",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for terminalizer player",
   "module": "./dist/index.js",
   "main": "./dist/index.js",
