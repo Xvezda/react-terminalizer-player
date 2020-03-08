@@ -40,7 +40,7 @@ Now, you can use terminalizer player in react.
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import TerminalizerPlayer from './TerminalizerPlayer'
+import TerminalizerPlayer from 'react-terminalizer-player'
 
 
 ReactDOM.render(
