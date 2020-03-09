@@ -60,7 +60,12 @@ const config = {
     }),
     */
     new webpack.NoEmitOnErrorsPlugin()
-  ]
+  ],
+  devServer: {
+    contentBase: path.resolve(__dirname),
+    compress: true,
+    port: 9000
+  }
 }
 
 if (process.env.NODE_ENV !== 'production') {
