@@ -8,11 +8,13 @@
 const webpack = require('webpack')
 const path = require('path')
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 const config = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
     index: path.resolve(path.join(__dirname, 'src', 'index.js')),
-    player: path.resolve(path.join(__dirname, 'src', 'player.js'))
+    demo: path.resolve(path.join(__dirname, 'src', 'demo.js'))
   },
   output: {
     path: path.resolve(path.join(__dirname, 'dist')),
@@ -39,6 +41,7 @@ const config = {
           {
             loader: 'style-loader'
           },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader'
           }
@@ -47,18 +50,15 @@ const config = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css']
+    extensions: ['.js', '.jsx', '.css'],
   },
   plugins: [
-    /*
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      Terminal: ['xterm', 'Terminal'],
-      'window.jQuery': 'jquery',
-      'window.$': 'jquery'
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     }),
-    */
     new webpack.NoEmitOnErrorsPlugin()
   ],
   devServer: {
@@ -69,16 +69,11 @@ const config = {
 }
 
 if (process.env.NODE_ENV !== 'production') {
+  /* Development mode */
   config.devtool = 'eval'
+  // config.entry.demo = path.resolve(path.join(__dirname, 'src', 'demo.js'))
 } else {
   config.devtool = false
-  /*
-  config.optimization = {
-    splitChunks: {
-      chunks: 'all'
-    }
-  }
-  */
 }
 
 module.exports = config

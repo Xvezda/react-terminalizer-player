@@ -14,5 +14,10 @@ node_modules
 # Optional npm cache directory
 .npm
 
+# Demo
+*/demo.js
+dist/[0-9].js
+demo/
+
 # Whitelist build
-!dist
+!dist/
