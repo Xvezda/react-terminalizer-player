@@ -13,7 +13,7 @@
     "clean": "rm -rf dist/",
     "serve": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run clean && npm run check && npm run build"
+    "prepublish": "yarn run clean && yarn run check && yarn run build"
   },
   "author": "Xvezda <xvezda@naver.com> (https://xvezda.com/)",
   "bugs": {
