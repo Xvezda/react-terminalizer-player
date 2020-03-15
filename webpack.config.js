@@ -22,7 +22,7 @@ const config = {
     libraryTarget: 'umd',
     globalObject: 'this',
     umdNamedDefine: true,
-    publicPath: '/dist/'
+    publicPath: '../dist/'
   },
   module: {
     rules: [
