@@ -18,6 +18,22 @@ Install dependencies:
 ```sh
 npm install --save terminalizer-player jquery@3 xterm@3.8.1
 ```
+## CDN
+
+styles
+```html
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/xterm@3.8.1/dist/xterm.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/terminalizer-player@0.4.1/dist/css/terminalizer.min.css">
+```
+
+scripts
+```html
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xterm@3.8.1/dist/xterm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/terminalizer-player@0.4.1/dist/js/terminalizer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-terminalizer-player@1.0.1"></script>
+```
+
 ## Usage
 
 Add the following styles inside of `head` tags.
