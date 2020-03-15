@@ -73,6 +73,10 @@ ReactDOM.render(
 
 > Tip: If you are using bundler, You can also import dependencies to bundle instead of adding it right into HTML.
 
+## Demo
+
+https://xvezda.github.io/react-terminalizer-player/demo/
+
 ## License
 
 MIT License.
